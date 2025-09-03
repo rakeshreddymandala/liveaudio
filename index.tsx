@@ -90,7 +90,7 @@ export class GdmLiveAudio extends LitElement {
   private async initClient() {
     this.initAudio();
 
-    // FIX: Use process.env.API_KEY per coding guidelines.
+    // FIX: The API key must be obtained exclusively from the environment variable process.env.API_KEY.
     this.client = new GoogleGenAI({
       apiKey: process.env.API_KEY,
     });
